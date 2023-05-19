@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">País</th>
+        <th scope="col">Género</th>
+        <th scope="col">Fundación</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let banda of bands">
+            <th scope="row">{{banda.id}}</th>
+            <td>{{banda.name}}</td>
+            <td>{{banda.foundation_year}}</td>
+            <td>{{banda.country}}</td>
+            <td>{{banda.genre}}</td>
+        </tr>
+    </tbody>
+</table>
